@@ -1,6 +1,6 @@
 {
 	"name": "nexus-ioc-graph-visualizer",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Graph visualizer for Nexus-IoC Container",
 	"author": "Isqanderm <aleksandr.melnik.personal@gmail.com> (https://www.linkedin.com/in/isqander-melnik)",
 	"homepage": "https://github.com/Isqanderm/ioc-graph-visualizer#readme",
