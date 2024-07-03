@@ -1,6 +1,6 @@
 {
 	"name": "nexus-ioc-graph-visualizer",
-	"version": "0.1.2",
+	"version": "0.1.3",
 	"description": "Graph visualizer for Nexus-IoC Container",
 	"author": "Isqanderm <aleksandr.melnik.personal@gmail.com> (https://www.linkedin.com/in/isqander-melnik)",
 	"homepage": "https://github.com/Isqanderm/ioc-graph-visualizer#readme",
@@ -26,6 +26,7 @@
 	"main": "./dist/index.js",
 	"module": "./dist/index.js",
 	"types": "./dist/index.d.ts",
+	"type": "commonjs",
 	"license": "MIT",
 	"peerDependencies": {
 		"nexus-ioc": "^0.1.0",
@@ -40,10 +41,10 @@
 		"sinon": "^18.0.0",
 		"ts-jest": "^29.1.5",
 		"ts-node": "^10.9.2",
-		"typescript": "^5.0.0"
+		"typescript": "^5.5.3"
 	},
 	"scripts": {
-		"build": "tsc",
+		"build": "tsc ./src/index.ts --declaration --sourceMap --outDir ./dist",
 		"clean": "rm -rf ./dist",
 		"test": "jest",
 		"test:watch": "jest --watch",

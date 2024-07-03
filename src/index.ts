@@ -77,10 +77,10 @@ export class GraphScannerVisualizer implements ScannerPluginInterface {
 			dot += this.createLegend();
 		}
 
-		for (const [token, edges] of this.nodeGroups) {
+		this.nodeGroups.forEach((edges, token) => {
 			const moduleNode = graph.getNode(token);
 			dot += this.createModuleSubgraph(moduleNode, edges);
-		}
+		});
 
 		for (const edge of edges) {
 			dot += this.createEdge(edge);
